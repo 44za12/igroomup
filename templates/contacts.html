@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+      <section class="section-page-title" style="background-image: url(static/images/page-title-1-1920x305.jpg); background-size: cover;">
+        <div class="container">
+          <h1 class="page-title">Contact</h1>
+        </div>
+      </section>
+      <section class="breadcrumbs-custom">
+        <div class="container">
+          <ul class="breadcrumbs-custom-path">
+            <li><a href="/">Home</a></li>
+            <li class="active">Contact</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Mailform-->
+      <section class="section section-md">
+        <div class="container">
+          <div class="row row-50">
+            <div class="col-lg-8">
+              <h2>Contact us</h2>
+              <div class="divider-lg"></div>
+              <p>You can contact us in any way that is convenient for you. We are available 24/7 via phone or email. <br class="d-none d-lg-inline">You can also use this quick contact form below or visit us personally.</p>
+              <!-- RD Mailform-->
+              <form class="rd-mailform text-left rd-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="http://livedemo00.template-help.com/wt_prod-16367/bat/rd-mailform.php">
+                <div class="row row-15">
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-name">First name</label>
+                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-sec-name">Last name</label>
+                      <input class="form-input" id="contact-sec-name" type="text" name="sec-name" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-phone">Phone</label>
+                      <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric @Required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-email">E-Mail</label>
+                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-message">Message</label>
+                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-button group-sm text-left">
+                  <button class="button button-primary" type="submit">Send message</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-4">
+              <ul class="contact-list">
+                <li> 
+                  <p class="contact-list-title">Address</p>
+                  <div class="contact-list-content"><span class="icon mdi mdi-map-marker icon-primary"></span><a href="contacts.html#">803, Pinnacle Tower, A-42/6, Sector 62, Noida, Uttar Pradesh 201301</a></div>
+                </li>
+                <li>
+                  <p class="contact-list-title">Phones</p>
+                  <div class="contact-list-content"><span class="icon mdi mdi-phone icon-primary"></span><a href="tel:+919910291771">+919910291771</a><span>, </span><a href="tel:+918076374609">+918076374609</a></div>
+                </li>
+                <li>
+                  <p class="contact-list-title">E-mail</p>
+                  <div class="contact-list-content"><span class="icon mdi mdi-email-outline icon-primary"></span><a href="mailto:order@igroomup.in">order@igroomup.in</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+{% endblock %}
