@@ -1,7 +1,7 @@
 @font-face {
     font-family: fontawesome;
-    src: url(static/fonts/fontawesome-webfont.eot%3Fv=4.7.0);
-    src: url(static/fonts/fontawesome-webfont.eot%3F) format("embedded-opentype"), url(static/fonts/fontawesome-webfont.woff2%3Fv=4.7.0) format("woff2"), url(static/fonts/fontawesome-webfont.woff%3Fv=4.7.0) format("woff"), url(static/fonts/fontawesome-webfont.ttf%3Fv=4.7.0) format("truetype"), url(static/fonts/fontawesome-webfont.svg%3Fv=4.7.0) format("svg");
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot);
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot) format("embedded-opentype"), url(static/fonts/fontawesome-webfont.woff2%3Fv=4.7.0) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff) format("woff"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf) format("truetype"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }
@@ -3047,8 +3047,8 @@
 
 @font-face {
     font-family: material design icons;
-    src: url(static/fonts/materialdesignicons-webfont.eot%3Fv=1.4.57);
-    src: url(static/fonts/materialdesignicons-webfont.eot%3F) format("embedded-opentype"), url(static/fonts/materialdesignicons-webfont.woff2%3Fv=1.4.57) format("woff2"), url(static/fonts/materialdesignicons-webfont.woff%3Fv=1.4.57) format("woff"), url(static/fonts/materialdesignicons-webfont.ttf%3Fv=1.4.57) format("truetype"), url(static/fonts/materialdesignicons-webfont.svg%3Fv=1.4.57) format("svg");
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/fonts/materialdesignicons-webfont.eot);
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/fonts/materialdesignicons-webfont.eot) format("embedded-opentype"), url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/fonts/materialdesignicons-webfont.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/fonts/materialdesignicons-webfont.woff) format("woff"), url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/fonts/materialdesignicons-webfont.ttf) format("truetype"), url(static/fonts/materialdesignicons-webfont.svg%3Fv=1.4.57) format("svg");
     font-weight: 400;
     font-style: normal
 }
