@@ -3,12 +3,12 @@ import smtplib
 from email.message import EmailMessage
 import csv
 import os.path
-def control(company,name,emailaddress,role,jobtype):
-	handle(company,name,emailaddress,role,jobtype)
-	subject = "{} wants to hire you!".format(company)
-	from_addr = "glamfleet@marketbetter.in"
-	to_addrs = "perfectaazar@gmail.com"
-	body = '''{} from {} wants to hire you for {} on a {} basis!\nIf I were you (wait I am you) I'd contact him right away!'''.format(name,company,role,jobtype)
+def control(name,organisation,phone,email,message):
+	handle(name,organisation,phone,email,message)
+	subject = "You have a message from {} of {}".format(name,organisation)
+	from_addr = "aazar@marketbetter.in"
+	to_addrs = "order@igroomup.in"
+	body = '''{} from {} with phone number {} and email {} has sent the below message by website:\n {}'''.format(name,organisation,phone,email,message)
 	msg = EmailMessage()
 	msg.set_content(body)
 	msg['Subject'] = subject
@@ -19,24 +19,24 @@ def control(company,name,emailaddress,role,jobtype):
 	server.send_message(msg)
 	server.quit()
 	
-def handle(company,name,emailaddress,role,jobtype):
+def handle(name,organisation,phone,email,message):
 	data = [{
-		"Company" : company,
 		"Name" : name,
-		"Email" : emailaddress,
-		"Role" : role,
-		"Job Type" : jobtype
+		"Organisation" : organisation,
+		"Phone" : phone,
+		"Email" : email,
+		"Message" : message
 	}]
 	if os.path.isfile('data.csv'):
 		f = open("data.csv", "a")
 		writer = csv.DictWriter(
-		    f, fieldnames=["Company", "Name", "Email", "Role", "Job Type"])
+		    f, fieldnames=["Name","Organisation","Phone","Email","Message"])
 		writer.writerows(data)
 		f.close()
 	else:
 		f = open("data.csv", "w")
 		writer = csv.DictWriter(
-		    f, fieldnames=["Company", "Name", "Email", "Role", "Job Type"])
+		    f, fieldnames=["Name","Organisation","Phone","Email","Message"])
 		writer.writeheader()
 		writer.writerows(data)
 		f.close()

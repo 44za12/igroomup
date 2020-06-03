@@ -13,6 +13,11 @@
           </ul>
         </div>
       </section>
+      {% if success %}
+      <script>
+        alert("Thanks for contacting us, we'll revert to you shortly!");
+      </script>
+      {% endif %}
       <!-- Mailform-->
       <section class="section section-md">
         <div class="container">
@@ -20,38 +25,38 @@
             <div class="col-lg-8">
               <h2>Contact us</h2>
               <div class="divider-lg"></div>
-              <p>You can contact us in any way that is convenient for you. We are available 24/7 via phone or email. <br class="d-none d-lg-inline">You can also use this quick contact form below or visit us personally.</p>
+              <p>You can contact us in any way that is convenient for you. We are available 24/7 via phone or email. <br class="d-none d-lg-inline">You can also use this quick contact form below or visit us personally.</p><br>
               <!-- RD Mailform-->
-              <form class="rd-mailform text-left rd-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="http://livedemo00.template-help.com/wt_prod-16367/bat/rd-mailform.php">
+              <form class="text-left" data-form-output="form-output-global" data-form-type="contact" method="post" role="form" action="">
                 <div class="row row-15">
                   <div class="col-sm-6">
                     <div class="form-wrap">
-                      <label class="form-label" for="contact-name">First name</label>
-                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="name">First Name</label>
+                      <input class="form-input" id="name" type="text" name="name" data-constraints="@Required">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-wrap">
-                      <label class="form-label" for="contact-sec-name">Last name</label>
-                      <input class="form-input" id="contact-sec-name" type="text" name="sec-name" data-constraints="@Required">
+                      <label class="form-label" for="organisation">Organisation Name</label>
+                      <input class="form-input" id="organisation" type="text" name="organisation" data-constraints="@Required">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-wrap">
-                      <label class="form-label" for="contact-phone">Phone</label>
-                      <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric @Required">
+                      <label class="form-label" for="phone">Phone</label>
+                      <input class="form-input" id="phone" type="text" name="phone" data-constraints="@Numeric @Required">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-wrap">
-                      <label class="form-label" for="contact-email">E-Mail</label>
-                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                      <label class="form-label" for="email">E-Mail</label>
+                      <input class="form-input" id="email" type="email" name="email" data-constraints="@Email @Required">
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-wrap">
-                      <label class="form-label" for="contact-message">Message</label>
-                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                      <label class="form-label" for="message">Message</label>
+                      <textarea class="form-input" id="message" name="message" data-constraints="@Required"></textarea>
                     </div>
                   </div>
                 </div>
